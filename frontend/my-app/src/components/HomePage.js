@@ -50,9 +50,7 @@ function pauseSong() {
         </div>
         <div ref={playerRef}></div>
       </div>
-      <div className="section1">
-
-      </div>
+      
     </div>
   );
 }

@@ -59,6 +59,10 @@
   width: 100%;   
 }
 
+.menu p {
+  font-size: 1.2rem;
+}
+
 .submenu {
   display: none;
 }

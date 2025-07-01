@@ -9,7 +9,7 @@ const LandingPage = () => {
     <div className="landing-container">
       <ParticlesBackground />
       <div className="centered-text">
-        <h1 className='logo-text'>🎵 Melodify – Your Personal Music Hub</h1>
+        <h1 className='logo-text'>🎵 Syncbeats – Your Personal Music Hub</h1>
         <h2>Stream, Organize, and Enjoy Music Like Never Before</h2>
         <br/>
         <h2>SignUp or Login to Continue</h2>
