@@ -1,0 +1,120 @@
+/* ---- Reset and global styles ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+/* ---- Particles background ---- */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* ---- SignUp container wrapper ---- */
+.signup-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---- Centering the sign-up box ---- */
+.signup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+/* ---- Sign-up box styling ---- */
+.signup-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  width: 90%;
+  max-width: 500px;
+
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ---- Input fields section ---- */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.input-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section input {
+  height: 3rem;
+  width: 80%;
+  border-radius: 25px;
+  border: none;
+  padding: 0 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-section input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ---- Error message styling ---- */
+.input-section div span {
+  color: rgb(255, 133, 133);
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* ---- Submit button ---- */
+.input-section button {
+  height: 3rem;
+  width: 40%;
+  margin: auto;
+  border: none;
+  border-radius: 25px;
+  background-color: #7c3aed;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #5b21b6;
+}

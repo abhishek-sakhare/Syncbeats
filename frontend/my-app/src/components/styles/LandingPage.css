@@ -1,0 +1,95 @@
+.logo-text {
+	place-self: center;
+	background: linear-gradient(
+		130deg,
+		rgba(255, 94, 0, 0.95),     /* Vivid orange */
+		rgba(255, 0, 144, 1),       /* Hot pink */
+		rgba(255, 196, 0, 0.95)     /* Bright yellow-gold */
+	) -100% / 200%;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font: 900 clamp(2em, 10vw, 10em) 'Exo', sans-serif;
+	animation: shimmer 3s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+	text-shadow: 0 0 10px rgba(255, 0, 144, 0.25);
+}
+
+@keyframes shimmer {
+	to {
+		background-position: 100%;
+	}
+}
+
+.centered-text {
+	text-align: center;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 30vh;
+	backdrop-filter: blur(4px);
+}
+
+.centered-text h2 {
+	color: rgba(255, 255, 255, 0.85);
+	font-size: 1.6rem;
+	font-weight: 500;
+	margin-top: 10px;
+	letter-spacing: 0.5px;
+	text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.centered-text h2:nth-of-type(2) {
+	margin-top: 20px;
+	font-size: 1.4rem;
+	color: #ff69b4; /* Hot pink for call-to-action */
+	font-weight: 600;
+	animation: fadeInPulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeInPulse {
+	from {
+		opacity: 0.6;
+		transform: scale(0.98);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+
+
+/* General button container styling */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.buttons button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.buttons button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.buttons button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
