@@ -15,7 +15,7 @@ const SignUp = () => {
     if (auth) {
       navigate("/");
     }
-  });
+  },[navigate]);
 
   const collectData = async () => {
     if (!name || !email || !password) {

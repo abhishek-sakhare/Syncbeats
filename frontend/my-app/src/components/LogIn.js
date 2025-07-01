@@ -14,7 +14,7 @@ const LogIn = () => {
     if (auth) {
       navigate("/homepage");
     }
-  });
+  },[navigate]);
 
   const handleLogin = async () => {
     if (!email || !password) {
