@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/HomePage.css";
 import ParticlesBackground from "./ParticlesBackground";
-import { useRef, useEffect, useState } from "react";
+import { useRef } from "react";
 
 
 function HomePage() {

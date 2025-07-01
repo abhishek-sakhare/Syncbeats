@@ -24,7 +24,7 @@ function Navigation() {
 
                 <ul>
 
-                    <div className="logo"><img src={logo}></img></div> 
+                    <div className="logo"><img src={logo} alt="logo"></img></div> 
 
                     <li><Link to={"/homepage"} >HomePage</Link></li>
 
@@ -34,10 +34,10 @@ function Navigation() {
 
                         <div className="navbar">
                             <div className="menu">
-                                <a>Profile</a>    
+                                <p>Profile</p>    
                                 <div className="submenu"> 
                                     <div className="profile-details">
-                                        <img src={profImage}></img>
+                                        <img src={profImage} alt="profile"></img>
                                         <p><strong>Name :-</strong>{JSON.parse(auth).name}</p>
                                         <p><strong>Email :-</strong>{JSON.parse(auth).email}</p>
 
@@ -56,7 +56,7 @@ function Navigation() {
                 :
 
                 <ul>
-                    <div className="logo"><img src={logo}></img></div> 
+                    <div className="logo"><img src={logo} alt="logo"></img></div> 
                     <li><Link to={"/signup"}>SignUp</Link></li>
                     <li><Link to={"/login"}>Login</Link></li>
                    
